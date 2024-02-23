@@ -1,12 +1,9 @@
 package _03_inject_fuel;
 
-public class Car {
+public interface Car {
 
-    private final String type;
-    private final int fuelEfficiency;
+    public static final int fuelEfficiency = 10;
+    public abstract final void go() {}
 
-    public Car(String type, int fuelEfficiency) {
-        this.type = type;
-        this.fuelEfficiency = fuelEfficiency;
-    }
+
 }
